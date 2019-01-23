@@ -2,6 +2,5 @@
 .vscode/
 env/
 *.spec
-dist/
 __pycache__/
 output/
