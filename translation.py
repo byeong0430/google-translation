@@ -52,12 +52,16 @@ for section in doc.sections:
         if paragraph.text:
             translation = gg.translate(paragraph.text, target_language)
             paragraph.text = translation
-        
+
+doc.save('./output/translated_' + input_file[0])
+
 # Paragraphs
 for paragraph in doc.paragraphs:
     if paragraph.text:
         translation = gg.translate(paragraph.text, target_language)
         paragraph.text = translation
+
+doc.save('./output/translated_' + input_file[0])
 
 # Tables
 for table in doc.tables:
@@ -66,6 +70,8 @@ for table in doc.tables:
             if cell.text:
                 translation = gg.translate(cell.text, target_language)
                 cell.text = translation
+
+doc.save('./output/translated_' + input_file[0])
 
 # Footer
 for section in doc.sections:
