@@ -2,7 +2,6 @@
 .vscode/
 env/
 *.spec
-build/
 dist/
 __pycache__/
 output/
