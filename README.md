@@ -28,7 +28,7 @@ pip3 install requests
 
 2. In order to run `translation.py`, you must first enable the Cloud Translation API and download a private key as JSON for authentication. Click [here](https://cloud.google.com/translate/docs/quickstart-client-libraries#client-libraries-install-python) and `SET UP A PROJECT` Button to see the instruction. Click [here](https://cloud.google.com/translate/pricing) to see the **API pricing**
 
-3. Add the API key in `env/` directory 
+3. Create `env/` folder inside `dist/` and Add the API key in it 
 
 4. Set the environment variable called `GOOGLE_APPLICATION_CREDENTIALS`. The instruction on Google Cloud doc doesn't appear to work on Windows. Instead, use the following command line on cmd:
 ```
